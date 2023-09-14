@@ -9,11 +9,11 @@ const Header = () => {
     <>
       <div id="header" className="w-full py-4 bg-zinc-950 px-2">
         <nav className="container mx-auto flex justify-between items-center">
-          <Link href="/">
+          <Link to="/">
             <img src={menu} className="text-2xl text-orange-400" />
           </Link>
           <Link
-            href="#"
+            to="/"
             className="logo text-2xl md:text-3xl font-bold tracking-wider"
           >
             Meme
@@ -29,10 +29,10 @@ const Header = () => {
                 placeholder="search ...."
               />
             </div>
-            <Link href="/" className="md:hidden">
+            <Link to="/" className="md:hidden">
             <img src={search} className="text-2xl text-orange-400" />
             </Link>
-            <Link href="/" className="ml-auto">
+            <Link to="/upload" className="ml-auto">
             <img src={user} className="text-2xl text-orange-400" />
               {/* <i className="fas fa-user-circle text-2xl"></i> */}
             </Link>
